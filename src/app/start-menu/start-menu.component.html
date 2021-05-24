@@ -1,0 +1,20 @@
+<h1 fxFlexAlign="row" fxLayoutAlign="center start" class="header">Asenka Guide</h1>
+<div class="cities-container" *ngFor="let city of cities">
+  <mat-card
+    matRipple
+    matRippleColor="rgba(255, 69, 201, 0.18)"
+    class="list-item"
+    fxLayout="row"
+    fxLayoutAlign="space-between center"
+    (click)="onCitySelect(city)"
+  >
+    <h2>{{city.name}}</h2>
+    <mat-icon
+      fontSet="material-icons-round"
+      class="icon"
+      (click)="changeIconState($event, city)"
+    >
+      {{city.bookmarked ? 'star' : 'star_border'}}
+    </mat-icon>
+  </mat-card>
+</div>

@@ -1,0 +1,7 @@
+@use '~@angular/material' as mat;
+
+$custom-typography: mat.define-typography-config(
+  $font-family: '"Exo 2", sans-serif'
+);
+
+@include mat.core($custom-typography);

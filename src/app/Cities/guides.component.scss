@@ -1,0 +1,49 @@
+@use './src/colors' as colors;
+
+%card {
+  color: colors.$brown;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+
+%first-row-card {
+  @extend %card;
+  width: 40vw;
+  height: 40vw;
+}
+
+%other-row-card {
+  @extend %card;
+  width: 82vw;
+  height: 40vw;
+}
+
+.screen-header {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  font-weight: 900;
+  font-size: 40px;
+  color: colors.$white;
+  text-align: center;
+}
+
+.history-card {
+  @extend %first-row-card;
+  background-color: colors.$pink;
+}
+
+.facts-card {
+  @extend %first-row-card;
+  background-color: colors.$yellow;
+}
+
+.entertainment-card {
+  @extend %other-row-card;
+  background-color: colors.$light;
+}
+
+.food-card {
+  @extend %other-row-card;
+  background-color: colors.$purple;
+}

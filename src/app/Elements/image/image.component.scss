@@ -1,0 +1,16 @@
+@use './src/colors' as colors;
+
+.container {
+  width: 100%;
+
+  img {
+    width: 100%;
+  }
+}
+
+.description {
+  color: colors.$main-purple;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: -5px;
+}

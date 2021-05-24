@@ -1,0 +1,7 @@
+@use './src/colors' as colors;
+
+.button {
+  background-color: colors.$yellow;
+  color: colors.$brown;
+  font-weight: 700;
+}

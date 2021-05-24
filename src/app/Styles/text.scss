@@ -1,0 +1,31 @@
+@use '../../colors' as colors;
+
+h1 {
+  margin-top: 40px;
+  color: colors.$white;
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+
+h2 {
+  color: colors.$white;
+  font-weight: 700;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+p {
+  color: colors.$white;
+  font-size: 15px;
+  margin-left: 10px;
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.last-p {
+  padding-bottom: 50px;
+}

@@ -1,0 +1,24 @@
+@use './src/colors' as colors;
+
+.header {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  font-size: 40px;
+  color: colors.$white;
+}
+
+.cities-container {
+  margin: 0 20px 10px 20px;
+
+  h2 {
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+  }
+}
+
+mat-card {
+  background-color: colors.$yellow;
+  color: colors.$brown;
+}

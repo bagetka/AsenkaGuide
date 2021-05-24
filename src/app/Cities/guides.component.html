@@ -1,0 +1,44 @@
+<h1 class="screen-header">{{city}}</h1>
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2vw">
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="2vw">
+    <mat-card
+      class="history-card"
+      matRipple
+      (click)="navigateTo('history')"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+    >
+      История
+    </mat-card>
+    <mat-card
+      class="facts-card"
+      matRipple
+      matRippleColor="rgba(255, 69, 201, 0.18)"
+      (click)="navigateTo('facts')"
+      fxLayout="row"
+      fxLayoutAlign="center center"
+    >
+      Факты
+    </mat-card>
+  </div>
+  <mat-card
+    class="entertainment-card"
+    matRipple
+    matRippleColor="rgba(255, 69, 201, 0.18)"
+    (click)="navigateTo('entertainment')"
+    fxLayout="row"
+    fxLayoutAlign="center center"
+  >
+    Достопримечательности
+  </mat-card>
+  <mat-card
+    class="food-card"
+    matRipple
+    matRippleColor="rgba(255, 69, 201, 0.18)"
+    (click)="navigateTo('food')"
+    fxLayout="row"
+    fxLayoutAlign="center center"
+  >
+    Едаааааа
+  </mat-card>
+</div>
